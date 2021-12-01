@@ -1,0 +1,6 @@
+curl -X POST -d '{"name":"alecito","email":"alecito@gmail.com","password":"123abc"}' -H "Content-Type:application/json" http://localhost:3000/api/user/login
+
+curl -X POST -d '{"email":"alecito@gmail.com","password":"123abc"}' -H "Content-Type:application/json" http://localhost:3000/api/user/login
+
+curl -X GET -d '{"name":"alecito","email":"alecito@gmail.com","password":"123abc"}' -H "Content-Type:application/json" -H "Authorization: auth-token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWxlY2l0byIsImlkIjoiNjFhNzdmNmEyNGNiODgyNzdhMjhlYzRhIiwiaWF0IjoxNjM4Mz" http://localhost:3000/api/dashboarduser
+
